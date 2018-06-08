@@ -1,0 +1,9 @@
+<?php
+ob_start();
+session_start();
+date_default_timezone_set('Asia/Jakarta');
+if(empty($_SESSION['IdUser'])){
+header("location:login.php");
+}
+ob_end_flush();
+?>
